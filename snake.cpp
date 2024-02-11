@@ -131,7 +131,7 @@ void Snake::draw()
 {
 	attron(COLOR_PAIR(1));
 	for (int i = 0; i < snake.size() - 1; i++) {
-		mvaddch(snake[i].second, snake[i].first, '*');
+		mvaddch(snake[i].second, snake[i].first, 'o');
 	}
 	mvaddch(snake.back().second, snake.back().first, head);
 }
